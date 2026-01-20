@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Nourish & Reclaim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 8C20 8 14 14 14 20C14 26 17.5 28 20 28C22.5 28 26 26 26 20C26 14 20 8 20 8Z" fill="currentColor"/>
+        </svg>
+        <span class="logo-text" >Nourish & Reclaim</span>
+      </div>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="btn btn-primary nav-cta" onclick="window.location.href='contact.html'">Get Started</button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Health & Wellness Blog</h1>
+      <p class="page-subtitle">Expert tips, success stories, and the latest in health science.</p>
+    </div>
+  </header>
+
+  <!-- Blog Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthy food">
+            <span class="blog-category">Nutrition</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Oct 15, 2025</span>
+              <span class="blog-read-time">5 min read</span>
+            </div>
+            <h3 class="blog-title">10 Superfoods to Boost Your Immunity This Winter</h3>
+            <p class="blog-excerpt">Discover the power of nutrient-dense foods that can help keep your immune system strong during the colder months.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Woman jogging">
+            <span class="blog-category">Fitness</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Oct 10, 2025</span>
+              <span class="blog-read-time">7 min read</span>
+            </div>
+            <h3 class="blog-title">The Ultimate Guide to Starting a Running Routine</h3>
+            <p class="blog-excerpt">From choosing the right shoes to pacing yourself, here's everything you need to know to hit the ground running.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Meditation">
+            <span class="blog-category">Mindfulness</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Oct 05, 2025</span>
+              <span class="blog-read-time">4 min read</span>
+            </div>
+            <h3 class="blog-title">5 Minutes of Mindfulness: A Daily Practice</h3>
+            <p class="blog-excerpt">Learn how just five minutes of daily meditation can reduce stress and improve your overall mental well-being.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 4 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gym workout">
+            <span class="blog-category">Fitness</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Sep 28, 2025</span>
+              <span class="blog-read-time">6 min read</span>
+            </div>
+            <h3 class="blog-title">Strength Training Myths Debunked</h3>
+            <p class="blog-excerpt">We separate fact from fiction to help you build muscle and strength effectively and safely.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 5 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cooking">
+            <span class="blog-category">Recipes</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Sep 20, 2025</span>
+              <span class="blog-read-time">8 min read</span>
+            </div>
+            <h3 class="blog-title">Quick & Healthy Weeknight Dinners</h3>
+            <p class="blog-excerpt">Delicious and nutritious recipes that you can whip up in under 30 minutes for the whole family.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 6 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sleep">
+            <span class="blog-category">Wellness</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Sep 15, 2025</span>
+              <span class="blog-read-time">5 min read</span>
+            </div>
+            <h3 class="blog-title">The Science of Sleep: Why It Matters</h3>
+            <p class="blog-excerpt">Understanding the vital role sleep plays in your physical and mental health, and how to get better rest.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest health tips and exclusive offers delivered straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form-inline" action="https://formsubmit.co/yourmail@gmail.com" method="POST">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 8C20 8 14 14 14 20C14 26 17.5 28 20 28C22.5 28 26 26 26 20C26 14 20 8 20 8Z" fill="currentColor"/>
+            </svg>
+            <span>HealthFlow</span>
+          </div>
+          <p class="footer-description">Transform your health with science-backed coaching and personalized wellness programs.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Nutrition Coaching</a></li>
+            <li><a href="services.html">Fitness Programs</a></li>
+            <li><a href="services.html">Mental Wellness</a></li>
+            <li><a href="services.html">Group Classes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#testimonials">Success Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 HealthFlow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

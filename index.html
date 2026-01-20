@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nourish & Reclaim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 8C20 8 14 14 14 20C14 26 17.5 28 20 28C22.5 28 26 26 26 20C26 14 20 8 20 8Z" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Nourish & Reclaim</span>
+      </div>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="btn btn-primary nav-cta" onclick="window.location.href='contact.html'"><a>Get Started</a></button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-title-line">Transform Your</span>
+          <span class="hero-title-line gradient-text">Health Journey</span>
+        </h1>
+        <p class="hero-subtitle">Science-backed coaching for lasting wellness and vitality</p>
+        
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-large" onclick="window.open('https://wa.me/918750597716?text=Hello%20I%20want%20to%20know%20more', '_blank')">
+            <span>Book a Call</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <button class="btn btn-secondary btn-large" onclick="window.open('http://127.0.0.1:3000/about.html', '_self')">Learn More</button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">5000+</span>
+            <span class="stat-label">Lives Changed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        
+        <div class="floating-card card-2" data-speed="0.3">
+          <div class="card-content">
+            <img src="images/Fit female practicing yoga in living room with online class _ Premium AI-generated image.jpg">
+          </div>
+        </div>
+        <div class="floating-card card-3" data-speed="0.7">
+          <div class="card-content">
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              <span>Certified Coaches</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2 class="section-title">Holistic Wellness Programs</h2>
+        <p class="section-subtitle">Expert-led programs tailored to your unique health goals</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-tilt>
+          <div class="service-card-inner">
+            <div class="service-card-front">
+              <div class="service-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                  <line x1="12" x2="12" y1="19" y2="22"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Personalized Nutrition</h3>
+              <p class="service-description">Custom meal plans designed for your body, goals, and lifestyle</p>
+              <span class="flip-hint">Hover to learn more →</span>
+            </div>
+            <div class="service-card-back">
+              <h4>What's Included:</h4>
+              <ul class="service-features">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Nutritional analysis
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Custom meal plans
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Shopping lists
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Weekly check-ins
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-card-inner">
+            <div class="service-card-front">
+              <div class="service-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="m6.5 6.5 11 11"/>
+                  <path d="m21 21-1-1"/>
+                  <path d="m3 3 1 1"/>
+                  <path d="m18 22 4-4"/>
+                  <path d="m2 6 4-4"/>
+                  <path d="m3 10 7-7"/>
+                  <path d="m14 21 7-7"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Fitness Coaching</h3>
+              <p class="service-description">Build strength and vitality with customized workout plans</p>
+              <span class="flip-hint">Hover to learn more →</span>
+            </div>
+            <div class="service-card-back">
+              <h4>What's Included:</h4>
+              <ul class="service-features">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Personalized programs
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Video demonstrations
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Progress tracking
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Group sessions
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-card-inner">
+            <div class="service-card-front">
+              <div class="service-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                  <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Mental Wellness</h3>
+              <p class="service-description">Mindfulness and stress management for holistic health</p>
+              <span class="flip-hint">Hover to learn more →</span>
+            </div>
+            <div class="service-card-back">
+              <h4>What's Included:</h4>
+              <ul class="service-features">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Meditation guidance
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Stress techniques
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Sleep optimization
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                  Mental health support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Your Journey to Wellness</h2>
+        <p class="section-subtitle">Simple, effective, transformative</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step" data-step="1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3 class="step-title">Initial Assessment</h3>
+            <p class="step-description">We analyze your health profile, lifestyle, and goals to create a baseline understanding</p>
+            <div class="step-features">
+              <span class="feature-tag">15 min consultation</span>
+              <span class="feature-tag">Health screening</span>
+            </div>
+          </div>
+          <div class="step-visual">
+            <div class="step-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 5H2v7h7V5ZM22 5h-7v7h7V5ZM9 16H2v7h7v-7ZM22 16h-7v7h7v-7Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <div class="process-step" data-step="2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3 class="step-title">Custom Plan</h3>
+            <p class="step-description">Receive your personalized wellness roadmap with nutrition, fitness, and mindfulness strategies</p>
+            <div class="step-features">
+              <span class="feature-tag">Tailored program</span>
+              <span class="feature-tag">Resource library</span>
+            </div>
+          </div>
+          <div class="step-visual">
+            <div class="step-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" x2="8" y1="13" y2="13"/>
+                <line x1="16" x2="8" y1="17" y2="17"/>
+                <line x1="10" x2="8" y1="9" y2="9"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <div class="process-step" data-step="3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3 class="step-title">Ongoing Support</h3>
+            <p class="step-description">Weekly check-ins and plan adjustments to ensure continuous progress toward your goals</p>
+            <div class="step-features">
+              <span class="feature-tag">24/7 messaging</span>
+              <span class="feature-tag">Monthly reviews</span>
+            </div>
+          </div>
+          <div class="step-visual">
+            <div class="step-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits section" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Benefits</span>
+        <h2 class="section-title">Why Choose HealthFlow</h2>
+      </div>
+
+      <div class="benefits-list">
+        <div class="benefit-row">
+          <div class="benefit-image">
+            <img src="https://images.pexels.com/photos/4592671/pexels-photo-4592671.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nutritious bowl - Hana Brannigan on Pexels" loading="lazy">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="benefit-content">
+            <h3 class="benefit-title">Science-Backed Approach</h3>
+            <p class="benefit-text">Our programs are grounded in the latest nutritional science and evidence-based fitness methodologies. Every recommendation is tailored to your unique physiology and goals.</p>
+            <ul class="benefit-points">
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Research-driven protocols
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Measurable outcomes
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Continuous optimization
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="benefit-row reverse">
+          <div class="benefit-image">
+            <img src="https://images.pexels.com/photos/931321/pexels-photo-931321.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strength training - Victor Freitas on Pexels" loading="lazy">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="benefit-content">
+            <h3 class="benefit-title">Expert Coaching Team</h3>
+            <p class="benefit-text">Work with certified health coaches, nutritionists, and fitness experts who are dedicated to your success. Our team brings decades of combined experience in transformative wellness.</p>
+            <ul class="benefit-points">
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Certified professionals
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Personalized attention
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Ongoing mentorship
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-image">
+            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Meditation - Valeria Ushakova on Pexels" loading="lazy">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="benefit-content">
+            <h3 class="benefit-title">Holistic Wellness</h3>
+            <p class="benefit-text">True health is more than physical fitness. We integrate nutrition, movement, mindfulness, and sleep optimization for comprehensive wellbeing that lasts.</p>
+            <ul class="benefit-points">
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Mind-body connection
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Sustainable habits
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                Long-term results
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section bg-light" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Plans</span>
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Flexible packages designed to fit your lifestyle and budget</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">Hormone Reset Plan</h3>
+            <div class="plan-price">
+            </div>
+            <p class="plan-desc">Perfect for getting started on your wellness journey</p>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Support natural hormone balance.
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Reduce inflammation to improve hormonal signaling.
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              WhatsApp Chat support
+            </li>
+          </ul>
+          <button class="btn btn-secondary btn-full" onclick="window.open('https://wa.me/918750597716?text=Hello%20I%20want%20to%20know%20more%20about%20hormone%20reset%20plan', '_blank')">3 Months</button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">DIABETES REVERSAL/
+              WEIGHT LOSS / MUSCLE
+              BUILDING
+            </h3>
+            <div class="plan-price">
+            </div>
+            <p class="plan-desc">Comprehensive support for serious results</p>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Personal coach
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Custom diet + workout
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Weekly progress tracking
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Priority support
+            </li>
+          </ul>
+          <button class="btn btn-primary btn-full" onclick="window.open('https://wa.me/918750597716?text=Hello%20I%20want%20to%20know%20more%20about%20Diabetes%20reversal%20/%20Muscle%20Building%20Plan%20/%20Weight%20Gain', '_blank')">3 Months / 6 Months</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">Gut Revival Plan</h3>
+            <div class="plan-price">
+            </div>
+            <p class="plan-desc">The ultimate personalized wellness experience</p>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Reduce digestive discomfort - bloating, gas, acidity
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Rebalance gut microbiome by increasing beneficial bacteria and reducing harmful
+              overgrowth.
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Repair the gut lining to improve nutrient absorption and lower inflammation
+            </li>
+          </ul>
+          <button class="btn btn-secondary btn-full" onclick="window.open('https://wa.me/918750597716?text=Hello%20I%20want%20to%20know%20more%20about%20Gut%20Revival%20plan', '_blank')">1 Month</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">The Male/ Female Fertility Flow Plan</h3>
+            <div class="plan-price">
+            </div>
+            <p class="plan-desc">The ultimate personalized wellness experience</p>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Support natural hormone balance
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Regulate menstrual cycles to improve timing and predictability of ovulation.
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+              </svg>
+              Balance blood sugar for better insulin sensitivity and hormonal stability.
+            </li>
+          </ul>
+          <button class="btn btn-secondary btn-full" onclick="window.open('https://wa.me/918750597716?text=Hello%20I%20want%20to%20know%20more%20about%20Male%20/%20Female%20Fertility%20Flow%20Plan', '_blank')">3 Months</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Success Stories</span>
+        <h2 class="section-title">Real Results from Real People</h2>
+        <p class="section-subtitle">Join thousands who transformed their lives</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card featured">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/80?u=sarah" alt="Sarah Johnson" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4 class="testimonial-name">Sanjay</h4>
+              <p class="testimonial-role">Age - 49y</p>
+            </div>
+            <div class="testimonial-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-text">"Lost 6 kgs in 10 weeks—without
+            dieting or feeling deprived.”
+            Better digestion, more energy, and
+            the weight finally came off.”“
+            Weight loss felt natural once my
+            digestion improved.”
+          </p>
+          <div class="testimonial-result">
+            <span class="result-metric">-6 kgs</span>
+            <span class="result-duration">in 10 weeks</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/80?u=michael" alt="Michael Chen" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4 class="testimonial-name">Ishita</h4>
+              <p class="testimonial-role">Age - 32y</p>
+            </div>
+            <div class="testimonial-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-text">I struggled with constant bloating
+            and acne for years. Within weeks
+            on the Gut Healing Plan, my
+            digestion felt lighter and my skin
+            started clearing up. This has been
+            the first plan that actually
+            worked from the root
+          </p>
+          <div class="testimonial-result">
+            <span class="result-metric">Felt Better</span>
+            <span class="result-duration">in 6 weeks</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/80?u=emma" alt="Emma Davis" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4 class="testimonial-name">Saloni</h4>
+              <p class="testimonial-role">Age - 30y</p>
+            </div>
+            <div class="testimonial-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-text">"My cycles were irregular and PMS
+            was unbearable before I joined the
+            Hormone reset Plan. Now my
+            periods are more balanced, cramps
+            have reduced, and I finally feel in
+            sync with my hormones. It’s been
+            life-changing!
+          </p>
+          <div class="testimonial-result">
+            <span class="result-metric">I finally feel in
+              sync with my hormones
+            </span>
+            <span class="result-duration">Immediate</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/80?u=david" alt="David Rodriguez" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4 class="testimonial-name">Preet Kaur</h4>
+              <p class="testimonial-role">Age - 28y</p>
+            </div>
+            <div class="testimonial-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-text">"In just 8 weeks on the Gut
+            Healing Plan, my cycle length
+            went from 45 days down to 32,
+            and my PMS mood swings
+            dropped by at least 70%. For the
+            first time in years, I feel my
+            hormones are finally under
+            control.
+            ”
+          </p>
+          <div class="testimonial-result">
+            <span class="result-metric"> I feel my
+              hormones are finally under
+              control
+            </span>
+            <span class="result-duration">in 8 weeks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section section" id="contact">
+    <div class="cta-bg">
+      <div class="gradient-orb orb-4"></div>
+      <div class="gradient-orb orb-5"></div>
+    </div>
+    
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Transform Your Health?</h2>
+        <p class="cta-subtitle">Join our community and start your wellness journey today</p>
+        
+        <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/yourmail@gmail.com" method="POST">
+          <div class="form-group">
+            <input 
+              type="email" 
+              name="email"
+              class="form-input" 
+              placeholder="Enter your email address" 
+              required
+              id="emailInput"
+            >
+
+            <button type="submit" class="btn btn-primary" >
+              Get Started
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <input type="hidden" name="_subject" value="New Website Subscriber">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thankyou.html">
+          </div>
+          <p class="form-note">No credit card required. Start your free consultation today.</p>
+        </form>
+
+        <div class="trust-badges">
+          <div class="badge-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+            </svg>
+            <span>100% Secure</span>
+          </div>
+          <div class="badge-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+            </svg>
+            <span>Certified Coaches</span>
+          </div>
+          <div class="badge-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+            <span>Good Results</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 8C20 8 14 14 14 20C14 26 17.5 28 20 28C22.5 28 26 26 26 20C26 14 20 8 20 8Z" fill="currentColor"/>
+            </svg>
+            <span>Nourish & Reclaim</span>
+          </div>
+          <p class="footer-description">Transform your health with science-backed coaching and personalized wellness programs.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Nutrition Coaching</a></li>
+            <li><a href="services.html">Fitness Programs</a></li>
+            <li><a href="services.html">Mental Wellness</a></li>
+            <li><a href="services.html">Group Classes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#testimonials">Success Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 HealthFlow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
